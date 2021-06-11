@@ -1,0 +1,116 @@
+<div class="container">
+    <div class="search_box">
+        <input class="search_input">你好</input>
+        <button class="search_bt">搜素</button>
+    </div>
+    <div class="concat_main">
+
+        <div class="concat_item">
+            <div class="duihua">
+                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
+                <text class="concat_text">你好</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+            </div>
+
+            <div>
+
+                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
+                <text class="concat_text">请直奔主题，不要说这种客套话</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+
+            </div>
+        </div>
+        <div class="concat_item">
+            <div class="duihua">
+                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
+                <text class="concat_text">你好</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+            </div>
+
+            <div>
+
+                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
+                <text class="concat_text">请直奔主题，不要说这种客套话</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+
+            </div>
+        </div>
+        <div class="concat_item">
+            <div class="duihua">
+                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
+                <text class="concat_text">你好</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+            </div>
+
+            <div>
+
+                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
+                <text class="concat_text">请直奔主题，不要说这种客套话</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+
+            </div>
+        </div>
+        <div class="concat_item">
+            <div class="duihua">
+                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
+                <text class="concat_text">你好</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+            </div>
+
+            <div>
+
+                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
+                <text class="concat_text">请直奔主题，不要说这种客套话</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+
+            </div>
+        </div>
+        <div class="concat_item">
+            <div class="duihua">
+                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
+                <text class="concat_text">你好</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+            </div>
+
+            <div>
+
+                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
+                <text class="concat_text">请直奔主题，不要说这种客套话</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+
+            </div>
+        </div>
+        <div class="concat_item">
+            <div class="duihua">
+                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
+                <text class="concat_text">你好</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+            </div>
+
+            <div>
+
+                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
+                <text class="concat_text">请直奔主题，不要说这种客套话</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+
+            </div>
+        </div>
+        <div class="concat_item">
+            <div class="duihua">
+                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
+                <text class="concat_text">你好</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+            </div>
+
+            <div>
+
+                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
+                <text class="concat_text">请直奔主题，不要说这种客套话</text>
+                <image src="/common/images/copy.png" class="copy"></image>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
