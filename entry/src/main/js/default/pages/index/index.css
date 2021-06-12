@@ -3,6 +3,17 @@
     padding: 0px;
     margin: 0px;
 }
+/* phone */
+@media screen and (device-type: phone) {
+    .title {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 60px;
+        padding-right: 160px;
+        padding-top: 20px;
+    }
+
+}
 
 .search_box {
     display: flex;

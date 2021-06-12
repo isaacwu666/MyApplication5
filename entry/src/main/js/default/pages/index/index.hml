@@ -1,115 +1,44 @@
 <div class="container">
+
+
     <div class="search_box">
-        <input class="search_input">你好</input>
-        <button class="search_bt">搜素</button>
+        <input class="search_input" type="text" onchange="getInput">你好</input>
+        <button class="search_bt" onclick="query">搜素</button>
     </div>
     <div class="concat_main">
 
-        <div class="concat_item">
-            <div class="duihua">
-                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
-                <text class="concat_text">你好</text>
-                <image src="/common/images/copy.png" class="copy"></image>
-            </div>
+    <!--        <div class="concat_item">-->
+    <!--            <div class="duihua">-->
+    <!--                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>-->
+    <!--                <text class="concat_text">你好</text>-->
+    <!--                <image src="/common/images/copy.png" class="copy"></image>-->
+    <!--            </div>-->
 
-            <div>
+    <!--            <div>-->
 
-                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
-                <text class="concat_text">请直奔主题，不要说这种客套话</text>
-                <image src="/common/images/copy.png" class="copy"></image>
+    <!--                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>-->
+    <!--                <text class="concat_text">请直奔主题，不要说这种客套话</text>-->
+    <!--                <image src="/common/images/copy.png" class="copy"></image>-->
 
-            </div>
-        </div>
-        <div class="concat_item">
-            <div class="duihua">
-                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
-                <text class="concat_text">你好</text>
-                <image src="/common/images/copy.png" class="copy"></image>
-            </div>
+    <!--            </div>-->
+    <!--        </div>-->
 
-            <div>
+        <list>
 
-                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
-                <text class="concat_text">请直奔主题，不要说这种客套话</text>
-                <image src="/common/images/copy.png" class="copy"></image>
 
-            </div>
-        </div>
-        <div class="concat_item">
-            <div class="duihua">
-                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
-                <text class="concat_text">你好</text>
-                <image src="/common/images/copy.png" class="copy"></image>
-            </div>
+            <list-item class="concat_item" for="{{ (pIndex,item) in concats }}">
 
-            <div>
+                <list-item class="duihua" for="{{ (index,juzi) in item }}">
 
-                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
-                <text class="concat_text">请直奔主题，不要说这种客套话</text>
-                <image src="/common/images/copy.png" class="copy"></image>
+                    <image src="/common/images/ic_girl.png" class="ic_boy_girl" if="{{ juzi.ansSex == 2 }}"></image>
+                    <image src="/common/images/ic_boy.png" class="ic_boy_girl" if="{{ juzi.ansSex == 1 }}"></image>
 
-            </div>
-        </div>
-        <div class="concat_item">
-            <div class="duihua">
-                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
-                <text class="concat_text">你好</text>
-                <image src="/common/images/copy.png" class="copy"></image>
-            </div>
+                    <text class="concat_text">{{ juzi.content }}</text>
+                    <image src="/common/images/copy.png" class="copy" onclick="copy" data="{{juzi.content}}"></image>
+                </list-item>
 
-            <div>
-
-                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
-                <text class="concat_text">请直奔主题，不要说这种客套话</text>
-                <image src="/common/images/copy.png" class="copy"></image>
-
-            </div>
-        </div>
-        <div class="concat_item">
-            <div class="duihua">
-                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
-                <text class="concat_text">你好</text>
-                <image src="/common/images/copy.png" class="copy"></image>
-            </div>
-
-            <div>
-
-                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
-                <text class="concat_text">请直奔主题，不要说这种客套话</text>
-                <image src="/common/images/copy.png" class="copy"></image>
-
-            </div>
-        </div>
-        <div class="concat_item">
-            <div class="duihua">
-                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
-                <text class="concat_text">你好</text>
-                <image src="/common/images/copy.png" class="copy"></image>
-            </div>
-
-            <div>
-
-                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
-                <text class="concat_text">请直奔主题，不要说这种客套话</text>
-                <image src="/common/images/copy.png" class="copy"></image>
-
-            </div>
-        </div>
-        <div class="concat_item">
-            <div class="duihua">
-                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>
-                <text class="concat_text">你好</text>
-                <image src="/common/images/copy.png" class="copy"></image>
-            </div>
-
-            <div>
-
-                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>
-                <text class="concat_text">请直奔主题，不要说这种客套话</text>
-                <image src="/common/images/copy.png" class="copy"></image>
-
-            </div>
-        </div>
+            </list-item>
+        </list>
 
 
     </div>
