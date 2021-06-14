@@ -2,7 +2,7 @@
 
 
     <div class="search_box">
-        <input class="search_input" type="text" onchange="getInput">你好</input>
+        <input class="search_input" type="text" onchange="getInput" value="{{queryObj.chatName}}"></input>
         <button class="search_bt" onclick="query">搜素</button>
     </div>
     <div class="concat_main">
@@ -23,7 +23,7 @@
     <!--            </div>-->
     <!--        </div>-->
 
-        <list>
+        <list on:scrollbottom="nextPage" on:scrolltop="query">
 
 
             <list-item class="concat_item" for="{{ (pIndex,item) in concats }}">
