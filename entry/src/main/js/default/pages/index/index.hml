@@ -1,45 +1,29 @@
+<!-- xxx.hml -->
+<element src="../../common/component/indexCom/indexCom.hml" name="indexCom" ></element>
 <div class="container">
+    <tabs class = "tabs" index="0" vertical="false" onchange="change">
+
+        <tab-content class="tabcontent" scrollable="true">
+            <div class="item-content" >
+              <indexcom></indexcom>
+            </div>
+            <div class="item-content" >
+                <text class="item-title">Second screen</text>
+            </div>
+
+        </tab-content>
+
+        <tab-bar class="tab-bar" mode="fixed">
+            
+            <div class="tab-bar-item" for="{{item in mens}}">
+                <image class="tab-bar-item-img" src="{{item.show?item.srcSelect:item.src}}"></image>
+                <text  class="tab-text" style="color: {{item.show?'#ffc600':''}}">{{item.name}}</text>
+            </div>
 
 
-    <div class="search_box">
-        <input class="search_input" type="text" onchange="getInput" value="{{queryObj.chatName}}"></input>
-        <button class="search_bt" onclick="query">搜素</button>
-    </div>
-    <div class="concat_main">
-
-    <!--        <div class="concat_item">-->
-    <!--            <div class="duihua">-->
-    <!--                <image src="/common/images/ic_girl.png" class="ic_boy_girl"></image>-->
-    <!--                <text class="concat_text">你好</text>-->
-    <!--                <image src="/common/images/copy.png" class="copy"></image>-->
-    <!--            </div>-->
-
-    <!--            <div>-->
-
-    <!--                <image src="/common/images/ic_boy.png" class="ic_boy_girl"></image>-->
-    <!--                <text class="concat_text">请直奔主题，不要说这种客套话</text>-->
-    <!--                <image src="/common/images/copy.png" class="copy"></image>-->
-
-    <!--            </div>-->
-    <!--        </div>-->
-
-        <list on:scrollbottom="nextPage" on:scrolltop="query">
 
 
-            <list-item class="concat_item" for="{{ (pIndex,item) in concats }}">
+        </tab-bar>
 
-                <list-item class="duihua" for="{{ (index,juzi) in item }}">
-
-                    <image src="/common/images/ic_girl.png" class="ic_boy_girl" if="{{ juzi.ansSex == 2 }}"></image>
-                    <image src="/common/images/ic_boy.png" class="ic_boy_girl" if="{{ juzi.ansSex == 1 }}"></image>
-
-                    <text class="concat_text">{{ juzi.content }}</text>
-                    <image src="/common/images/copy.png" class="copy" onclick="copy" data="{{juzi.content}}"></image>
-                </list-item>
-
-            </list-item>
-        </list>
-
-
-    </div>
+    </tabs>
 </div>
